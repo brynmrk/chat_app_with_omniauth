@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rails Devise Login</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="main-content-wrapper col-xs-12">
+        <div class="alert-messages col-xs-12">
+          <%= render partial: 'shared/alert_messages' %>
+        </div>
+        <div class="main-content col-xs-12">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
