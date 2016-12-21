@@ -31,7 +31,7 @@
     -webkit-justify-content: center;
     justify-content: center;
     
-    .login-form {
+    .new-session, .password-reset, .password-edit, .new-user, .edit-user, .mailer-confirm, .mailer-reset, .mailer-unlock, .confirmation {
       display: block;
       top: 0;
       left: 0;
