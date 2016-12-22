@@ -19,6 +19,8 @@ gem 'bootswatch-rails'
 gem 'font-awesome-sass', '~> 4.6.2'
 
 gem 'omniauth-facebook'
+gem "omniauth-google-oauth2"
+gem 'omniauth-twitter'
 gem "figaro"
 
 group :development, :test do
