@@ -35,8 +35,8 @@ Rails.application.configure do
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
 
   # Mount Action Cable outside main process or domain
-  config.action_cable.url = "wss://chat-app-brynmrk.c9users.io/cable"
-  config.action_cable.allowed_request_origins = ['https://chat-app-brynmrk.c9users.io', 'https://chat-app-brynmrk.c9users.io']
+  config.action_cable.url = ["wss://chat-app-brynmrk.c9users.io/cable", "wss://fast-fjord-78632.herokuapp.com/cable"]
+  config.action_cable.allowed_request_origins = ['https://chat-app-brynmrk.c9users.io', 'https://chat-app-brynmrk.c9users.io', 'https://fast-fjord-78632.herokuapp.com', 'http://fast-fjord-78632.herokuapp.com']
   # config.action_cable.url = 'wss://example.com/cable'
   # config.action_cable.allowed_request_origins = [ 'http://example.com', /http:\/\/example.*/ ]
 
