@@ -28,17 +28,7 @@ gem "heroku"
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'pry-rails'
-  gem 'factory_girl_rails'
-  gem 'capybara'
-  gem 'rspec-rails', '~> 3.5'
-  gem 'shoulda-matchers'
-  gem 'shoulda-callback-matchers', '~> 1.1.1'
-  gem 'rspec-its'
-  gem 'chromedriver-helper'
-  gem 'database_cleaner'
-  gem 'selenium-webdriver'
   gem 'pry'
-  gem 'rails-controller-testing'
 end
 
 group :development do
