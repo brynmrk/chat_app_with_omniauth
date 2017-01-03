@@ -6,6 +6,9 @@ class User < ApplicationRecord
          
   devise :omniauthable, :omniauth_providers => [:facebook, :google_oauth2, :twitter]
   
+  has_many :chat_rooms, dependent: :destroy
+  has_many :messages, dependent: :destroy
+  
   def self.from_omniauth(auth)
     where(email: auth.info.email).first_or_create do
       where(provider: auth.provider, uid: auth.uid).first_or_create do |user|

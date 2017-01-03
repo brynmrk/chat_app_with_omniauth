@@ -23,6 +23,8 @@ gem "omniauth-google-oauth2"
 gem 'omniauth-twitter'
 gem "figaro"
 
+gem "heroku"
+
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'pry-rails'

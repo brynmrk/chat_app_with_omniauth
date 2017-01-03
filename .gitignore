@@ -21,3 +21,5 @@
 config/facebook.yml
 config/google.yml
 config/twitter.yml
+# Ignore application configuration
+/config/application.yml
