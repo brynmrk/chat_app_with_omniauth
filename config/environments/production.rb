@@ -75,8 +75,8 @@ Rails.application.configure do
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
   
-  config.action_cable.allowed_request_origins = ['https://chat-app-brynmrk.c9users.io', 'http://chat-app-brynmrk.c9users.io']
-  config.action_cable.url = "wss://chat-app-brynmrk.c9users.io/chat_rooms/cable"
+  config.action_cable.allowed_request_origins = ['https://chat-app-brynmrk.c9users.io', 'https://chat-app-brynmrk.c9users.io']
+  config.action_cable.url = "wss://chat-app-brynmrk.c9users.io/cable"
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
