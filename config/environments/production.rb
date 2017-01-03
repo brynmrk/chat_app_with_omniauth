@@ -35,7 +35,8 @@ Rails.application.configure do
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
 
   # Mount Action Cable outside main process or domain
-  # config.action_cable.mount_path = nil
+  config.action_cable.url = "wss://chat-app-brynmrk.c9users.io/cable"
+  config.action_cable.allowed_request_origins = ['https://chat-app-brynmrk.c9users.io', 'https://chat-app-brynmrk.c9users.io']
   # config.action_cable.url = 'wss://example.com/cable'
   # config.action_cable.allowed_request_origins = [ 'http://example.com', /http:\/\/example.*/ ]
 
@@ -74,9 +75,6 @@ Rails.application.configure do
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
-  
-  config.action_cable.allowed_request_origins = ['https://chat-app-brynmrk.c9users.io', 'https://chat-app-brynmrk.c9users.io']
-  config.action_cable.url = "wss://chat-app-brynmrk.c9users.io/cable"
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
