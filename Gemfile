@@ -24,6 +24,7 @@ gem 'omniauth-twitter'
 gem "figaro"
 
 gem "heroku"
+gem 'redis'
 
 group :development, :test do
   gem 'byebug', platform: :mri
