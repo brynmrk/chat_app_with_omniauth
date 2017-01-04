@@ -25,6 +25,6 @@ test:
 
 production:
   <<: *default
-  database: chat_app_production
-  username: chat_app
+  database: d1faqgt9f5eiqb
+  username: wltjgwxotyugtg
   password: <%= ENV['CHAT_APP_DATABASE_PASSWORD'] %>
