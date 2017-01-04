@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   
   resources :chat_rooms, only: [:new, :create, :show, :index]
   
-  root to: 'home#index'
+  root to: 'chat_rooms#index'
 end

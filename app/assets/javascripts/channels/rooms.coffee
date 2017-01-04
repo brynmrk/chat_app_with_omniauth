@@ -1,7 +1,9 @@
 jQuery(document).on 'turbolinks:load', ->
   messages = $('#messages')
   if $('#messages').length > 0
-    messages_to_bottom = -> messages.scrollTop(messages.prop("scrollHeight"))
+    messages_to_bottom = -> 
+      messages.scrollTop(messages.prop("scrollHeight"))
+      $("#new_message > input.btn.btn-primary.btn-lg").removeAttr('disabled');
 
     messages_to_bottom()
 
@@ -30,4 +32,4 @@ jQuery(document).on 'turbolinks:load', ->
         App.global_chat.send_message textarea.val(), messages.data('chat-room-id')
         textarea.val('')
       e.preventDefault()
-  return
+  return false

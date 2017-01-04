@@ -1,4 +1,6 @@
-<h1><%= @chat_room.title %></h1>
+<div class="room-header">
+  <h1><%= link_to "<span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>".html_safe, chat_rooms_path %> <%= @chat_room.title %></h1>
+</div>
 
 <div id="messages" data-chat-room-id="<%= @chat_room.id %>">
   <%= render @chat_room.messages %>
