@@ -11,7 +11,7 @@ gem 'jquery-rails', '~> 4.3.3'
 gem 'turbolinks', '~> 5.1.1'
 gem 'jbuilder', '~> 2.7.0'
 
-gem 'devise', '~> 4.4.3'
+gem 'devise', '~> 4.7.1'
 gem 'devise-bootstrap-views', '~> 0.0.11'
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'bootswatch-rails', '~> 3.3.5'
